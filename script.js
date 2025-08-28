@@ -120,7 +120,7 @@ contactForm.addEventListener('submit', (e) => {
             };
             
             // Send email using EmailJS
-            emailjs.send('service_00gl3mk', 'template_I3v14wt', templateParams)
+            emailjs.send('service_00gl3mk', 'template_l3v14wt', templateParams)
                 .then(() => {
                     showMessage('Thank you, we will be in contact soon.');
                     contactForm.reset();
