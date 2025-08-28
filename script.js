@@ -116,7 +116,6 @@ contactForm.addEventListener('submit', (e) => {
                 from_email: data.email,
                 subject: data.subject || 'Website Contact Form',
                 message: data.message,
-                to_email: 'info@volumetricventures.com',
                 'g-recaptcha-response': token // Include token for verification
             };
             
@@ -128,6 +127,7 @@ contactForm.addEventListener('submit', (e) => {
                 })
                 .catch((error) => {
                     console.error('Email send failed:', error);
+                    console.error('Error details:', error.text || error.message || error);
                     // Fallback to mailto if EmailJS fails
                     const subject = encodeURIComponent(data.subject || 'Contact Form Submission');
                     const body = encodeURIComponent(

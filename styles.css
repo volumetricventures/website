@@ -343,12 +343,9 @@ body {
     }
 }
 
-/* reCAPTCHA Badge Styling */
+/* reCAPTCHA Badge - Hidden */
 .grecaptcha-badge {
-    visibility: visible !important;
-    bottom: 60px !important;
-    right: 10px !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+    visibility: hidden !important;
 }
 
 /* Responsive Design */
